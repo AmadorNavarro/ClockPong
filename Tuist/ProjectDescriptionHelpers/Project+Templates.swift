@@ -53,6 +53,7 @@ extension Project {
             destinations: destinations,
             product: .app,
             bundleId: "com.amadornavarro.\(name)",
+            deploymentTargets: .iOS("15.0"),
             infoPlist: .extendingDefault(with: infoPlist),
             sources: ["Targets/\(name)/Sources/**"],
             resources: ["Targets/\(name)/Resources/**"],
@@ -64,6 +65,7 @@ extension Project {
             destinations: destinations,
             product: .unitTests,
             bundleId: "com.amadornavarro.\(name)Tests",
+            deploymentTargets: .iOS("15.0"),
             infoPlist: .default,
             sources: ["Targets/\(name)/Tests/**"],
             dependencies: [
