@@ -4,7 +4,7 @@ import SwiftUI
 struct ClockPongApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView(controller: GameController())
         }
     }
 }
